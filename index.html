@@ -20,8 +20,8 @@
             }
             $(document).ready(function(){ //EN ESTA PARTE TENGO QUE USAR EL TRAVERSING 
                 $('#large_box').on('click',function(){
-                    $(this).children.css('background-color',random_color());
-                    alert('you clicked the big box!');  
+                    $(this).children().css('background-color', random_color());
+                    $(this).css('background-color', random_color());  
             //comenta esto cuando hayas averiguado para qué se utiliza event.stopPropagation 
                 })
                 $('.side_box').on('click',function(event){//estos son el de la iz o la der-----cambiarle el color a sus siblings
